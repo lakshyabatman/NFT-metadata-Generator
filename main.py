@@ -35,7 +35,7 @@ def toERC721Metadata(object_dict):
         "description": object_dict["Description"] if "Description" in object_dict else "",
         "name": object_dict["Title"] if "Title" in object_dict else "",
         "external_url": object_dict["URL"] if "URL" in object_dict else "",
-        "attribute": []
+        "attributes": []
     }
     object_dict.pop("Image", None)
     object_dict.pop("Description", None)
