@@ -42,7 +42,7 @@ def toERC721Metadata(object_dict):
     object_dict.pop("Title", None)
     object_dict.pop("URL", None)
     for attribute in object_dict:
-        metadata["attribute"].append({
+        metadata["attributes"].append({
             "trait_type": attribute,
             "value": object_dict[attribute]
         })
